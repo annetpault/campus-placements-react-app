@@ -6,6 +6,8 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AddRegistration from './components/AddRegistration'
 import SearchRegistration from './components/SearchRegistration'
+import ViewRegistration from './components/ViewRegistration'
+import DeleteRegistration from './components/DeleteRegistration'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +18,8 @@ function App() {
  <Routes>
   <Route path='/' element={<AddRegistration />} />
   <Route path='/search' element={<SearchRegistration />} />
+  <Route path='/view' element={<ViewRegistration />} />
+  <Route path='/delete' element={<DeleteRegistration />} />
  </Routes>
  </BrowserRouter>
     </>
